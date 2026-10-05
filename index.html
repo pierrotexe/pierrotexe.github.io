@@ -1,31 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pierrot.exe!</title>
-  <head>
   <link rel="stylesheet" href="style.css">
 </head>
-
-</head>
 <body>
-  <header></header>
 
+  <header class="site-header">
+    <!-- nav:导航-->
+    <!-- aria-label:导航名字-->
+    <nav aria-label = "Main">
+      <a class="site-name" href="index.html" aria-current="page">Pierrot.exe!</a>
+      <!-- ul包裹链接：导航是一组并列链接-->
+      <ul class = "nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul> 
+    </nav>
+  </header>
+
+  <!-- main：本页独有的主体内容，每个页面只能有一个 -->
   <main>
-    <article>
-      <h1>Hello World!</h1>
-      <p class="meta"><time datetime="2026-10-01">October 1, 2026</time></p>
-
-      <p> Hello there... </p>
-
-      <h2>A Subheading</h2>
-      <p>Continue the body text...</p>
-    </article>
+    <h1>Pierrot.exe!</h1>
+    <p>Designer and developer. One-line introduction goes here.</p>
   </main>
 
-  <footer></footer>
+  <footer>
+    <p>© 2026 Pierrot.exe!</p>
+  </footer>
+
 </body>
 </html>
+
+
+
+ 
