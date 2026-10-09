@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writing — Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav aria-label="Main">
+      <a class="site-name" href="index.html">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="games.html">Games</a></li>
+        <!-- 当前页是 Artwork，所以 aria-current 移到这一项 -->
+        <li><a href="artwork.html" aria-current="page">Artwork </a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Artwork</h1>
+    <!-- 指向上一步复制出来的文章原型；路径以本文件（根目录）为起点 -->
+    <p><a href="artwork/sample-post.html">Sample post</a></p>
+  </main>
+
+  <footer>
+    <p>© 2026 Your Name</p>
+  </footer>
+
+</body>
+</html>

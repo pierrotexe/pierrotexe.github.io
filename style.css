@@ -23,3 +23,29 @@
     p  { margin: 0 0 1.25em; } 
 
     .meta { color: #6b6b6b; font-size: 0.875rem; margin-bottom: 2.5rem; }
+
+    /* ===== 顶栏导航 =====*/
+
+    /* nav作为flex的容器：站点名和ul这两个直接子元素横向排列*/
+    .site-header nav {
+      display: flex;
+      /*主轴分布：首个项目靠左，最后一个项目靠右，剩余空间居中*/
+      justify-content: space-between;
+      /* 交叉轴对齐：按文字基线对齐*/
+      align-items: baseline;
+      /*项目之间最小间距：在窗口缩小时项目之间不重叠*/
+      gap: 1rem;
+    }
+
+    /*ul作为flex的容器：li子元素横向排列*/
+    .nav-links {
+      display:flex;
+      gap:1.5rem;
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+
+    .nav-links a[aria-current="page"]{
+      font-weight:700;
+    }
